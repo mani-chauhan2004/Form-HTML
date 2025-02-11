@@ -6,33 +6,26 @@
     <title>Document</title>
 </head>
 <body>
-    <table align="center">  
-        <form action="#" method="post" name="form" id="form" target="_blank">  
-            <tr>
-                <td colspan="2" align="center" bgcolor="lightblue"><h1><font color="green">Dummy Form</font></h1></td>
-            </tr>
-            <tr bgcolor="#E7EFF5">
-                <td width="250"><label for="name"><font color="green">Name:</font></label></td>
-                <td width="200"><input type="text" id="name" name="name" placeholder="Enter your name" minlength="6" maxlength="20" autofocus></td>
-            </tr>
+    <form action="#" method="post" name="form" id="form" target="_blank">  
+        <fieldset>
+            <legend><h1><font color="green">Dummy Form</font></h1></legend>
+            <label for="name"><font color="green">Name:</font></label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="age"><font color="green">Age</font></label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            <label for="email"><font color="green">Email:</font></label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="password"><font color="green">Password:</font></label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <label for="telephone"><font color="green">Telephone:</font></label>
+            <input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone" required>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <table align="center">  
             <tr bgcolor="lightblue">
-                <td><label for="age"><font color="green">Age:</font></label></td>
-                <td><input type="number" id="age" name="age" placeholder="Enter your age(Min 18)" min="18" required></td>
-            </tr>
-            <tr bgcolor="#E7EFF5">
-                <td><label for="email"><font color="green">Email:</font></label></td>
-                <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
-            </tr>
-            <tr bgcolor="lightblue">
-                <td><label for="password"><font color="green">Password:</font></label></td>
-                <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
-            </tr>
-            <tr bgcolor="#E7EFF5">
-                <td><label for="telephone"><font color="green">Telephone:</font></label></td>
-                <td><input type="tel" id="telephone" name="telephone" placeholder="Enter your telephone" required></td>
-            </tr>
-            <tr bgcolor="lightblue">
-                <td><label for="url"><font color="green">URL:</font></label></td>
+                <td width="250"><label for="url"><font color="green">URL:</font></label></td>
                 <td><input type="url" id="url" name="url" placeholder="Enter url(eg: https://)"></td>
             </tr>
             <tr bgcolor="#E7EFF5">
@@ -84,7 +77,7 @@
             <tr bgcolor="#E7EFF5">
                 <td><label for="checkbox"><font color="green">Subscribed:</font></label></td>
                 <td><input type="checkbox" id="checkbox" name="checkbox" required></td>
-    
+
             </tr>
             <tr bgcolor="lightblue">
                 <td><font color="green"><label for="">Search:</label></font></td>
@@ -98,7 +91,7 @@
                 <td align="right"><input type="submit" id="submit" name="submit"></td>
                 <td><input type="reset" id="reset" name="reset"></td>
             </tr>
-        </form>
-    </table>
+        </table>
+    </form>
 </body>
 </html>
